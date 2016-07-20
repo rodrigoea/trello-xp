@@ -1,0 +1,24 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon_browser.png",
+      "default_title": "Trello XP"
+   },
+   "content_scripts": [ {
+      "js": [ "jquery.min.js", "content.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "See how many XP you have.",
+   "icons": {
+      "128": "icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuKN9WJldYo2svBwHzpp3KcC0YiUzz9RKgYi251uDb3XClequbDABUEoXspK/qMsi6GjN5ULCpsc/+VFljpKWmUS8xDwpuzl6FRouTCwiBYtEqlQ1v/JiwRMEs08cWVmJbJl7G9Qnrb4HODAAfFb7USutp8NYSpQfLKXUWaWI3EAkIMizlWL6Ras9toc3NlQWGeaTn2l5uJBrLPZlhVr0O5w2mYxY7bOJLFZNg/b+w99/z8LwzibE+B/Fo4GAFim7NNKduxS22aJ7G6m8rRZRDPk96QFpArbS81a5Bh4cOiP7QhGYnZLjZVo9ro9cuI0Z63Z8VIYULRltEVZcmuixvQIDAQAB",
+   "manifest_version": 2,
+   "name": "Trello XP",
+   "permissions": [ "tabs", "http://*/*", "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.5"
+}
