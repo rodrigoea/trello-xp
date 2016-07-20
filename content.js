@@ -15,7 +15,7 @@ function countXP(){
 	var currentUser = $('.header-member .member-avatar').attr('title');
 
 	$('.js-list-name-input').each(function() {
-		if($(this).html() == "Done"){
+		if($(this).html() == "Done" || $(this).html() == "Deploy"){
 
 			$(this).parent().parent().find('.list-card .member-avatar[title="' + currentUser + '"]').each(function(){
 				var cardValue = $(this).parent().parent().parent().find('.card-label').html();
