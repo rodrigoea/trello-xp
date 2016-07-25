@@ -1,9 +1,5 @@
 /* EVENTS */
 
-$('.js-my-xp').remove();
-
-$('<div class="header-btn js-my-xp"><div class="header-btn-text">XP: <span class="current-xp">0</span> | Faltam: <span class="remaining-xp">0</span></div></div>').appendTo('.header-user');
-
 function countXP(){
 
 	var myXP = 0;
@@ -36,6 +32,10 @@ if (currentDomain == "trello.com") {
 		'background': 'url(https://raw.githubusercontent.com/rodrigoantinarelli/trello-xp/master/cover/img.jpg)',
 		'background-size': '200px'
 	});
+
+	$('.js-my-xp').remove();
+
+	$('<div class="header-btn js-my-xp"><div class="header-btn-text">XP: <span class="current-xp">0</span> | Faltam: <span class="remaining-xp">0</span></div></div>').appendTo('.header-user');
 
 	//CALL FUNCTION EVERY 1000ms
 	setInterval(function(){
