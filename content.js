@@ -5,7 +5,7 @@ function countXP(){
 	var myXP = 0;
 	var currentUser = $('.header-member .member-avatar').attr('title');
 
-	$('.js-list-name-input').each(function() {
+	$('.js-list-name-assist').each(function() {
 		if($(this).html() == "Done" || $(this).html() == "Deploy"){
 
 			$(this).parent().parent().find('.list-card .member-avatar[title="' + currentUser + '"]').each(function(){
