@@ -11,7 +11,7 @@
       "js": [ "jquery.min.js", "content.js" ],
       "matches": [ "http://*/*", "https://*/*" ]
    } ],
-   "description": "See how many XP you have.",
+   "description": "A Tool created by Hotmart Team Club, so each one can see how many XP they've got.",
    "icons": {
       "128": "icon.png"
    },
@@ -20,5 +20,5 @@
    "name": "Trello XP",
    "permissions": [ "tabs", "http://*/*", "activeTab" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.5.2"
+   "version": "2.0"
 }
